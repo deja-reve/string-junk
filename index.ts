@@ -22,6 +22,10 @@ app.post("/reverse", (req, res) => {
   res.send({ reversed: reversedString });
 });
 
+app.get("/love", (req, res) => {
+  res.send("I love you, so very very much!!! 💕🥰");
+});
+
 app.get("/generate", (req, res) => {
   const length = parseInt(req.query.length as string);
 
